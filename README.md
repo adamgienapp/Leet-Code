@@ -47,4 +47,70 @@ This repo contains some of my solutions to Leet Code problems, performance can b
   Memory Usage: 36 MB, less than 36.46% of JavaScript online submissions for Reverse Integer.
 
 
-#8 - 
+#8 - String to Integer (atoi)
+
+  Runtime: 68 ms, faster than 93.81% of JavaScript online submissions for String to Integer (atoi).
+  
+  Memory Usage: 36.6 MB, less than 42.86% of JavaScript online submissions for String to Integer (atoi).
+
+
+#9 - Palindrome Number
+
+  Runtime: 192 ms, faster than 68.59% of JavaScript online submissions for Palindrome Number.
+  
+  Memory Usage: 45.2 MB, less than 74.14% of JavaScript online submissions for Palindrome Number.
+
+
+#10 - 
+
+
+#11 - Container With Most Water
+
+  Runtime: 48 ms, faster than 98.47% of JavaScript online submissions for Container With Most Water.
+  
+  Memory Usage: 35.6 MB, less than 54.55% of JavaScript online submissions for Container With Most Water.
+
+
+#12 - Integer to Roman Numeral
+
+  Runtime: 140 ms, faster than 69.59% of JavaScript online submissions for Integer to Roman.
+  
+  Memory Usage: 39.8 MB, less than 80.00% of JavaScript online submissions for Integer to Roman.
+
+
+#13 - Roman to Integer
+
+  Runtime: 140 ms, faster than 78.62% of JavaScript online submissions for Roman to Integer.
+  
+  Memory Usage: 40.5 MB, less than 21.28% of JavaScript online submissions for Roman to Integer.
+
+
+#14 - Longest Common Prefix
+
+  Runtime: 60 ms, faster than 59.47% of JavaScript online submissions for Longest Common Prefix.
+  
+  Memory Usage: 35.2 MB, less than 31.25% of JavaScript online submissions for Longest Common Prefix.
+
+
+#15 - Three Sum
+
+  Runtime: 196 ms, faster than 30.62% of JavaScript online submissions for 3Sum.
+  
+  Memory Usage: 46.6 MB, less than 84.00% of JavaScript online submissions for 3Sum.
+
+
+#16 - Three Sum Closest
+
+  Runtime: 76 ms, faster than 34.03% of JavaScript online submissions for 3Sum Closest.
+  
+  Memory Usage: 35.4 MB, less than 100.00% of JavaScript online submissions for 3Sum Closest.
+
+
+#17 - Letter Combinations of a Phone Number
+
+  Runtime: 52 ms, faster than 74.67% of JavaScript online submissions for Letter Combinations of a Phone Number.
+  
+  Memory Usage: 33.8 MB, less than 85.71% of JavaScript online submissions for Letter Combinations of a Phone Number.
+
+
+#18 - 
