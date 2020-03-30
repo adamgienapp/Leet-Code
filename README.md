@@ -61,7 +61,11 @@ This repo contains some of my solutions to Leet Code problems, performance can b
   Memory Usage: 45.2 MB, less than 74.14% of JavaScript online submissions for Palindrome Number.
 
 
-#10 - 
+#10 - Regex Matching
+
+  Runtime: 76 ms, faster than 68.74% of JavaScript online submissions for Regular Expression Matching.
+  
+  Memory Usage: 34.5 MB, less than 100.00% of JavaScript online submissions for Regular Expression Matching.
 
 
 #11 - Container With Most Water
