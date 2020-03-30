@@ -114,3 +114,13 @@ This repo contains some of my solutions to Leet Code problems, performance can b
 
 
 #18 - 
+
+
+#19 - Remove Nth Node from End of List
+
+  Runtime: 56 ms, faster than 81.57% of JavaScript online submissions for Remove Nth Node From End of List.
+  
+  Memory Usage: 34.3 MB, less than 13.64% of JavaScript online submissions for Remove Nth Node From End of List.
+
+
+#20 - 
