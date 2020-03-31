@@ -127,4 +127,11 @@ This repo contains some of my solutions to Leet Code problems, performance can b
   Memory Usage: 34.3 MB, less than 13.64% of JavaScript online submissions for Remove Nth Node From End of List.
 
 
-#20 - 
+#20 - Valid Parentheses
+
+  Runtime: 52 ms, faster than 84.89% of JavaScript online submissions for Valid Parentheses.
+  
+  Memory Usage: 33.8 MB, less than 80.00% of JavaScript online submissions for Valid Parentheses.
+
+
+#21 - 
