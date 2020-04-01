@@ -1,6 +1,11 @@
 # Leet-Code
 
-This repo contains some of my solutions to Leet Code problems, performance can be tracked in this read me.
+This repo contains my solutions to Leet Code problems. Performance metrics for each problem are tracked below (all metrics are generated at time of submittal / are not updated).
+
+All solutions written in Javascript.
+
+
+PERFORMANCE:
 
 #1 - Two Sum
 
