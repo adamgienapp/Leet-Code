@@ -61,3 +61,12 @@ NOTEABLE RESULTS:
   Runtime: 52 ms, faster than 84.89% of JavaScript online submissions for Valid Parentheses.
   
   Memory Usage: 33.8 MB, less than 80.00% of JavaScript online submissions for Valid Parentheses.
+
+
+#75 - Sort Colors
+
+  Runtime: 64 ms, faster than 76.17% of JavaScript online submissions for Sort Colors.
+
+  Memory Usage: 33.7 MB, less than 80.68% of JavaScript online submissions for Sort Colors.
+
+
