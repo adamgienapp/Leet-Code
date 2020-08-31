@@ -20,32 +20,22 @@
 var deleteNode = function(root, key) {
   if (!root) return null;
   
-  const findNode = (val) => {
-      if (root.val === key) return [root, null, false];
-      
-      const stack = [root];
-      
-      while(stack.length) {
-          let node = stack.pop();
-          
-          if (node.left) {
-              if (node.left.val === val) {
-                  return [node.left, node, true];
-              }
-              stack.push(node.left);   
-          }
-          if (node.right) {
-              if (node.right.val === val) {
-                  return [node.right, node, false];
-              }
-              stack.push(node.right);
-          }
+  let parent = null;
+  let target = root;
+  let isLeft = false;
+  while (target) {
+      if (target.val === key) {
+          break;
+      } else if (target.val > key) {
+          parent = target;
+          target = target.left;
+          isLeft = true;
+      } else if (target.val < key) {
+          parent = target;
+          target = target.right;
+          isLeft = false;
       }
-      
-      return [null, null, false];
   }
-  
-  let [target, parent, isLeft] = root.val === key ? [root, null, false] : findNode(key);
   
   if (!target) return root;
   
