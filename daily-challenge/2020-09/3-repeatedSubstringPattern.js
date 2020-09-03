@@ -10,6 +10,8 @@
  * @param {string} s
  * @return {boolean}
  */
+
+ // Initial dumb idea.
 var repeatedSubstringPattern = function(s) {
   if (s.length < 2) return false;
   
@@ -38,6 +40,27 @@ var repeatedSubstringPattern = function(s) {
       if (check === '') {
           return true;
       }
+  }
+  
+  return false;
+};
+
+/**
+ * Find substrings where length is a factor of s.length.
+ * Test substring.repeat(factor) === s.
+*/
+var repeatedSubstringPattern = function(s) {
+  if (s.length < 2) return false;
+  
+  let i = 0;
+  while (i < Math.floor(s.length / 2)) {
+      const mod = s.length % (i + 1);
+      if (!mod) {
+          const substring = s.slice(0, i + 1);
+          const test = substring.repeat(s.length / (i + 1));
+          if (test === s) return true;
+      }
+      i++;
   }
   
   return false;
