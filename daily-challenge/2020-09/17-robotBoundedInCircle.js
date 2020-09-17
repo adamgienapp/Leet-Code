@@ -24,16 +24,10 @@ var isRobotBounded = function(instructions) {
   let vector = 2;
   const changeDir = (turn) => {
       if (turn === "L") {
-          vector--;
+          vector = (vector + 3) % 4;
       }
       if (turn === "R") {
-          vector++;
-      }
-      if (vector === 4) {
-          vector = 0;
-      }
-      if (vector === -1) {
-          vector = 3;
+          vector = (vector + 1) % 4;
       }
   }
   
