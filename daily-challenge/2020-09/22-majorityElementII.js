@@ -16,14 +16,21 @@ var majorityElement = function(nums) {
   for (let i = 0; i < nums.length; i++) {
       if (num1 === nums[i]) {
           count1++;
-      } else if (num2 === nums[i]) {
+          continue;
+      }
+      if (num2 === nums[i]) {
           count2++;
-      } else if (count1 === 0) {
+          continue;
+      }
+      if (count1 === 0) {
           num1 = nums[i];
           count1 = 1;
-      } else if (count2 === 0) {
+          continue;
+      }
+      if (count2 === 0) {
           num2 = nums[i];
           count2 = 1;
+          continue;
       } else {
           count1--;
           count2--;
