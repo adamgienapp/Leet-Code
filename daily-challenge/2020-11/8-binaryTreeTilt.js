@@ -18,11 +18,10 @@ var findTilt = function(root) {
   const calcTilt = (node) => {
       if (!node) return 0;
       
-      let left = calcTilt(node.left);
-      let right = calcTilt(node.right);
+      let left = node.left ? calcTilt(node.left) : 0;
+      let right = node.right ? calcTilt(node.right) : 0;
       
-      let nodeTilt = Math.abs(left - right);
-      treeTilt += nodeTilt;
+      treeTilt += Math.abs(left - right);
       
       return node.val + left + right;
   }
