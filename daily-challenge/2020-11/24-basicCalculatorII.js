@@ -36,7 +36,6 @@ var calculate = function(s) {
   
   let currA = '';
   let currB = '';
-  // let currC = '';
   let currOp = '';
   let nextOp = '';
   
