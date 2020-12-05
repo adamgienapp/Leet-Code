@@ -6,21 +6,23 @@
  * @return {boolean}
  */
 var canPlaceFlowers = function(flowerbed, n) {
-  if (n === 0) return true;
-  
-  let openingLen = 0;
-  let adjacent1 = false;
-  for (let i = 0; i < flowerbed.length && n > 0; i++) {
-      let spot = flowerbed[i];
-      if (spot === 1) {
-          n -= adjacent1 ? Math.floor((openingLen - 1) / 2) : Math.floor(openingLen / 2);
-          openingLen = 0;
-          adjacent1 = true;
+  let count = n;
+  if (count === 0) {
+      return true;
+  }
+  for (let i = 0; i < flowerbed.length; i++) {
+      if (!flowerbed[i]) {
+          if (!flowerbed[i-1] && !flowerbed[i+1]) {
+              count--;
+              i++;
+              if (count === 0) {
+                  return true;
+              }
+          }
       } else {
-          openingLen++;
+          i++;
       }
   }
-  n -= adjacent1 ? Math.floor(openingLen / 2) : Math.ceil(openingLen / 2);
   
-  return n <= 0;
+  return false;
 };
