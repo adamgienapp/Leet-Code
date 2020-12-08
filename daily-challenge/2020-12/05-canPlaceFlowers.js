@@ -1,5 +1,3 @@
-// PROMPT: 
-
 /**
  * @param {number[]} flowerbed
  * @param {number} n
