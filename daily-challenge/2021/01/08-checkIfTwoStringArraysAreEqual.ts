@@ -7,17 +7,21 @@ function arrayStringsAreEqual(word1: string[], word2: string[]): boolean {
 
 // O(1) space two (four?) pointer:
 function arrayStringsAreEqualConstantSpace(word1: string[], word2: string[]): boolean {
-  let [w2, p2] = [0,0];
+  let [w1, p1, w2, p2] = [0,0,0,0];
 
-  for (let i: number = 0; i < word1.length && w2 < word2.length; i++) {
-    for (let j: number = 0; j < word1[i].length; j++) {
-      if (!word2[w2] || word1[i][j] !== word2[w2][p2]) return false;
-      if (++p2 === word2[w2].length) {
-          w2++;
-          p2 = 0;
-      }
+  while(w1 < word1.length && w2 < word2.length) {
+    if (!word2[w2] || word1[w1][p1] !== word2[w2][p2]) return false;
+
+    if (++p1 === word1[w1].length) {
+      w1++;
+      p1 = 0;
+    }
+
+    if (++p2 === word2[w2].length) {
+      w2++;
+      p2 = 0;
     }
   }
 
-  return w2 === word2.length;
+  return w1 === word1.length && w2 === word2.length;
 };
