@@ -11,7 +11,7 @@ var minOperations = function(nums, x) {
   
   let [l, r] = [0, 0];
   let currSum = 0;
-  let maxLen = -Infinity;
+  let maxLen = -1;
   
   while (r < nums.length) {
       currSum += nums[r];
@@ -24,5 +24,5 @@ var minOperations = function(nums, x) {
       r++;
   }
   
-  return maxLen === -Infinity ? -1 : nums.length - maxLen;
+  return maxLen === -1 ? -1 : nums.length - maxLen;
 };
