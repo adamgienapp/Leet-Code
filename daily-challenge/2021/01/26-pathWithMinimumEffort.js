@@ -1,3 +1,5 @@
+// PROMPT: https://leetcode.com/problems/path-with-minimum-effort/
+
 /**
  * @param {number[][]} heights
  * @return {number}
