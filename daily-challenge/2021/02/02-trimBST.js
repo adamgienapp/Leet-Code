@@ -25,3 +25,21 @@ var trimBST = function(root, low, high) {
   
   return root;
 };
+
+
+// Call stack reduction:
+var trimBST = function(root, low, high) {
+  if (!root) return null;
+  
+  while (root?.val < low || root?.val > high) {
+      if (root?.val < low) root = root.right;
+      else root = root.left;
+  }
+  
+  if (root) {
+      root.left = trimBST(root.left, low, high);
+      root.right = trimBST(root.right, low, high);   
+  }
+  
+  return root;
+};
