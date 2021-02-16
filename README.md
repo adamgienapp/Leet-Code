@@ -2,4 +2,4 @@
 
 This repo contains my solutions to Leet Code problems.
 
-All solutions written in Javascript.
+Solutions written in Javascript or Typescript.
